@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(22, 24, 31), rgb(23, 30, 34));
+}
+#wrapperleft{
+    padding: 100px;
+    width: 50%;
+    float: left;
+    color: silver;
+}
+#write{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#setTask{
+    margin-left: 20px;
+    background-color: silver;
+    border: none;
+    border-radius: 6%;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+}
+#setTask:hover {
+    background-color: rgb(81, 96, 153);
+}
+#lista{
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+li{
+    margin-top: 10px;
+}
+#lista span{
+    margin-left: 20px;
+}
+#trashSentence{
+    margin-left: 10px;
+}
+a {
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(81, 96, 153);
+}
+#wrapperright{
+    float: right;
+    width: 50%;
+    padding: 100px;
+    color: silver;
+}
