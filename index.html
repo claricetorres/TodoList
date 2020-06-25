@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotivationalTodolist</title>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="wrapperleft">
-        <h1>What do you need to do?</h1>
-        <input type="text" id="write">
+        <input type="text" id="write" placeholder="What do you need to do?">
         <button id="setTask" onclick="setTasks()">Let's go</button>
         <ul id="lista">
         </ul>
         <div><a onclick="trashme()"><i class="fas fa-trash-alt"></i><span id="trashSentence">Select and remove</span> </a></div>
     </div>
     <div id="wrapperright">
-        <h1>Turn on the motivation</h1>
-        <label class="switch">
-            <input type="checkbox" onclick="bringmeDogs()">
-            <span class="slider round"></span>
-        </label>
+      <h1><a onclick="bringmeDogs()" id="maxSentence">Turn on the motivation</a></h1>
         <div id="mydogs"></div>
     </div> 
 </body>

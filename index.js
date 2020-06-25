@@ -71,9 +71,11 @@ function bringmeDogs() {
         imageDog.setAttributeNode(idMax);
         imageDog.style.width = '300px';
         imageDog.style.height = '300px';
+      document.getElementById('maxSentence').innerText = 'Turn off the motivation';
     }
     else{
         //hide some dog pics
-        document.getElementById('dog').remove();
+       document.getElementById('dog').remove();
+       document.getElementById('maxSentence').innerText = 'Turn on the motivation';
     } 
 }
