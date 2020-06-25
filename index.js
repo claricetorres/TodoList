@@ -2,6 +2,7 @@
 const submit = document.getElementById('setTask');
 const input = document.getElementById('write');
 const lista = document.getElementById('lista');
+const rightSide = document.getElementById('mydogs');
 //array that saves all the data:
 var tasks =  [];
 //makes enter work on input:
@@ -54,4 +55,25 @@ function trashme(){
     var getwholeTask = document.getElementsByTagName('li');
     byeLi(wholeTaskAfter, getwholeTask);
     console.log(tasks);
+}
+//shows dogs pics when clicked
+var clickedDog = 0;
+function bringmeDogs() {
+    clickedDog++;
+    if(clickedDog%2 != 0){
+        var imageDog = document.createElement('img');
+        rightSide.appendChild(imageDog);
+        var linkMax = document.createAttribute('src');
+        var idMax = document.createAttribute('id');
+        idMax.value = 'dog';
+        linkMax.value = 'https://i.ibb.co/2tqG87b/Whats-App-Image-2020-01-06-at-10-55-03.jpg';
+        imageDog.setAttributeNode(linkMax);
+        imageDog.setAttributeNode(idMax);
+        imageDog.style.width = '300px';
+        imageDog.style.height = '300px';
+    }
+    else{
+        //hide some dog pics
+        document.getElementById('dog').remove();
+    } 
 }
